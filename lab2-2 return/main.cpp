@@ -2,29 +2,38 @@
 
 using namespace std;
 
-int minNumber (int Min);int Num;
+int minNumber (int Min);
 
 
-int minNumber(int Min)
+int main()
+{
+    int number ;
+     cout<<"Enter Number :"<<endl;
+     cin>>number;
+
+    minNumber(number);
+    return 0;
+}
+
+
+int minNumber(int minNumber)
     {
-        int Num;
-        for(int i =2; i <=5; i++){
-            cout<<"Please Enter The Number :"<<i<<endl;
-            cin>>Num ;
+int Num,Min;
+    cout<<"Please Enter The Number 1"<<endl;
+    cin>>Num ;
+    Num=Min;
+        for(int i =2; i <=minNumber; i++){
+
+        cout<<"Please Enter The Number "<<i<<":"<<endl;
+        cin>>Num ;
+
+
         if(Num<Min){
             Min=Num;
         }
 
         }
+        cout<<"The minNumber = "<< Min ;
         return Min;
     }
 
-int main()
-{
-    int Mn ;
-    cout << "Please Enter The Number :"<<endl ;
-    cin >> Num;
-    Mn=minNumber(Num);
-    cout << "the MinNumber = " << Mn << endl;
-    return 0;
-}
