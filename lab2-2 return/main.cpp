@@ -2,7 +2,9 @@
 
 using namespace std;
 
-int minNumber (int Min);
+int Cal(int minNumber);
+
+
 
 
 int main()
@@ -11,26 +13,39 @@ int main()
      cout<<"Enter Number :"<<endl;
      cin>>number;
 
-    minNumber(number);
+
+
+    Cal(number);
     return 0;
 }
 
 
-int minNumber(int minNumber)
+
+
+int Cal(int minNumber)
     {
 int Num,Min;
     cout<<"Please Enter The Number 1"<<endl;
     cin>>Num ;
-    Num=Min;
+
+
+   // shoud but min == num msh els3aks 34an number = 0
+    Min=Num;
         for(int i =2; i <=minNumber; i++){
+
+
 
         cout<<"Please Enter The Number "<<i<<":"<<endl;
         cin>>Num ;
 
 
-        if(Num<Min){
-            Min=Num;
+
+
+        if(Num < Min){
+            Min = Num;
         }
+
+
 
         }
         cout<<"The minNumber = "<< Min ;
